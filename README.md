@@ -1,6 +1,8 @@
-Movie Analysis: Data Collection, NLP & Predictive Modeling
+#Movie Analysis: Data Collection, NLP & Predictive Modeling
 Complete movie analysis pipeline from data collection to predictive modeling, combining web scraping, advanced NLP techniques, and statistical modeling to understand narrative patterns and predict movie success metrics.
-Project Overview
+
+#Project Overview
+
 This project performs end-to-end movie analysis through:
 •	Data Collection: Web scraping IMDb for movie data and box office information
 •	NLP Analysis: BERT embeddings, topic modeling (LDA), and plot similarity
@@ -14,31 +16,38 @@ Dataset
 Scraped data: imdb_scraped_data_with_box_office.xlsx - Fresh IMDb data including movie titles, ratings, votes, plots, budget, and box office figures.
 Processed data: movies_with_nlp_features.csv - Original data enhanced with engineered NLP features for modeling.
 Analysis Pipeline
+
 Part 1: Data Collection
 •	Web Scraping: Automated data collection from IMDb search results
 •	Box Office Data: Individual movie page scraping for financial metrics
 •	Data Handling: Smart navigation through IMDb's dynamic content and pagination
+
 Part 2: NLP Feature Extraction
 •	BERT Embeddings: 384-dimensional plot vectors using all-MiniLM-L6-v2
 •	Topic Modeling: 6 narrative topics via LDA (Action, Crime, Family, Sci-Fi, Horror, Romance)
 •	Similarity Metrics: Plot similarity to highest-ROI movies
 •	Feature Engineering: Centroid distance, embedding complexity, topic probabilities
+
 Part 3: Regression Modeling
 •	Log Transformations: Applied to ROI, Budget, Votes, Opening Weekend earnings
 •	Logit Transformation: For similarity scores bounded between 0 and 1
 •	Multiple Linear Regression: 
 •	log(ROI) ~ log(Budget) + Year + Rating + log(Votes) +            log(Opening_Weekend) + logit(Similarity_to_top_ROI) + Topic
-📋 Installation
+
+#📋 Installation
 1.	Clone the repository:
 git clone https://github.com/yourusername/movie-plot-analysis.git
 cd movie-plot-analysis
+
 2.	Install dependencies:
 pip install selenium beautifulsoup4 webdriver-manager pandas openpyxl
 pip install numpy sentence-transformers scikit-learn gensim nltk spacy statsmodels
+
 3.	Download NLTK data:
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
+
 Usage
 1.	Data Collection: Run the web scraping script to gather fresh IMDb data
 2.	NLP Analysis: Execute feature extraction to generate embeddings and topics
