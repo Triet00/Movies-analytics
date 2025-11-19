@@ -1,8 +1,8 @@
-*Movie Analysis: Data Collection, NLP & Predictive Modeling
+# Movie Analysis: Data Collection, NLP & Predictive Modeling
 
 Complete movie analysis pipeline from data collection to predictive modeling, combining web scraping, advanced NLP techniques, and statistical modeling to understand narrative patterns and predict movie success metrics.
 
-*1. Project Overview
+## 1. Project Overview
 
 This project performs end-to-end movie analysis through:
 •	Data Collection: Web scraping IMDb for movie data and box office information
@@ -13,7 +13,7 @@ This project performs end-to-end movie analysis through:
 
 •	Regression Modeling: Multiple linear regression with log transformations for ROI prediction
 
-Technologies Used:
+### 1.1 Technologies Used:
 
 •	Python 3.x
 
@@ -21,12 +21,12 @@ Technologies Used:
 
 •	ML/Stats: scikit-learn, statsmodels, numpy, pandas
 
-Dataset
+### 1.2 Dataset
 Scraped data: imdb_scraped_data_with_box_office.xlsx - Fresh IMDb data including movie titles, ratings, votes, plots, budget, and box office figures.
 
 Processed data: movies_with_nlp_features.csv - Original data enhanced with engineered NLP features for modeling.
 
-Analysis Pipeline
+## 2. Analysis Pipeline
 
 Part 1: Data Collection
 •	Web Scraping: Automated data collection from IMDb search results
@@ -45,7 +45,7 @@ Part 3: Regression Modeling
 •	Multiple Linear Regression: 
 •	log(ROI) ~ log(Budget) + Year + Rating + log(Votes) +            log(Opening_Weekend) + logit(Similarity_to_top_ROI) + Topic
 
-#📋 Installation
+# 3. Installation
 1.	Clone the repository:
 git clone https://github.com/yourusername/movie-plot-analysis.git
 cd movie-plot-analysis
@@ -59,7 +59,7 @@ import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 
-Usage
+# 4. Usage
 1.	Data Collection: Run the web scraping script to gather fresh IMDb data
    
 2.	NLP Analysis: Execute feature extraction to generate embeddings and topics
@@ -77,7 +77,7 @@ The complete pipeline:
 
 •	Outputs predictions and model summaries
 
-Key Results
+# 5. Key Results
 •	Fresh Data Collection: Automated scraping of current movie information and box office data
 
 •	Topic Discovery: 6 distinct narrative categories automatically identified
@@ -114,7 +114,7 @@ movie-analysis/
 
 └── README.md                       # This file
 
-Applications
+# 6. Applications
 •	Content Strategy: Understanding narrative patterns that drive success
 
 •	Investment Decisions: ROI prediction incorporating plot characteristics
@@ -137,10 +137,10 @@ Contributing:
    
 5.	Open a Pull Request
     
-License
+# 7. License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+# 8. Acknowledgments
 
 •	Sentence Transformers team for the pre-trained BERT models
 
