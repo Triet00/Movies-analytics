@@ -45,7 +45,7 @@ Part 3: Regression Modeling
 •	Multiple Linear Regression: 
 •	log(ROI) ~ log(Budget) + Year + Rating + log(Votes) +            log(Opening_Weekend) + logit(Similarity_to_top_ROI) + Topic
 
-# 3. Installation
+## 3. Installation
 1.	Clone the repository:
 git clone https://github.com/yourusername/movie-plot-analysis.git
 cd movie-plot-analysis
@@ -59,7 +59,7 @@ import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 
-# 4. Usage
+## 4. Usage
 1.	Data Collection: Run the web scraping script to gather fresh IMDb data
    
 2.	NLP Analysis: Execute feature extraction to generate embeddings and topics
@@ -77,7 +77,7 @@ The complete pipeline:
 
 •	Outputs predictions and model summaries
 
-# 5. Key Results
+## 5. Key Results
 •	Fresh Data Collection: Automated scraping of current movie information and box office data
 
 •	Topic Discovery: 6 distinct narrative categories automatically identified
@@ -114,7 +114,7 @@ movie-analysis/
 
 └── README.md                       # This file
 
-# 6. Applications
+## 6. Applications
 •	Content Strategy: Understanding narrative patterns that drive success
 
 •	Investment Decisions: ROI prediction incorporating plot characteristics
@@ -137,10 +137,10 @@ Contributing:
    
 5.	Open a Pull Request
     
-# 7. License
+## 7. License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-# 8. Acknowledgments
+## 8. Acknowledgments
 
 •	Sentence Transformers team for the pre-trained BERT models
 
