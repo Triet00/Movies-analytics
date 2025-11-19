@@ -1,8 +1,8 @@
-#Movie Analysis: Data Collection, NLP & Predictive Modeling
+*Movie Analysis: Data Collection, NLP & Predictive Modeling
 
 Complete movie analysis pipeline from data collection to predictive modeling, combining web scraping, advanced NLP techniques, and statistical modeling to understand narrative patterns and predict movie success metrics.
 
-#Project Overview
+*1. Project Overview
 
 This project performs end-to-end movie analysis through:
 •	Data Collection: Web scraping IMDb for movie data and box office information
@@ -13,7 +13,7 @@ This project performs end-to-end movie analysis through:
 
 •	Regression Modeling: Multiple linear regression with log transformations for ROI prediction
 
-Technologies Used
+Technologies Used:
 
 •	Python 3.x
 
