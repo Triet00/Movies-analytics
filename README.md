@@ -47,7 +47,7 @@ Part 3: Regression Modeling
 
 ## 3. Installation
 1.	Clone the repository:
-git clone https://github.com/Triet00/movie-plot-analysis.git
+git clone https://github.com/Triet00/Movies-analytics.git
 cd movie-plot-analysis
 
 2.	Install dependencies:
