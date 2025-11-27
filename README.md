@@ -5,6 +5,7 @@ Complete movie analysis pipeline from data collection to predictive modeling, co
 ## 1. Project Overview
 
 This project performs end-to-end movie analysis through:
+
 •	Data Collection: Web scraping IMDb for movie data and box office information
 
 •	NLP Analysis: BERT embeddings, topic modeling (LDA), and plot similarity
