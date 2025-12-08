@@ -30,21 +30,32 @@ Processed data: movies_with_nlp_features.csv - Original data enhanced with engin
 ## 2. Analysis Pipeline
 
 Part 1: Data Collection
+
 •	Web Scraping: Automated data collection from IMDb search results
+
 •	Box Office Data: Individual movie page scraping for financial metrics
+
 •	Data Handling: Smart navigation through IMDb's dynamic content and pagination
 
 Part 2: NLP Feature Extraction
+
 •	BERT Embeddings: 384-dimensional plot vectors using all-MiniLM-L6-v2
+
 •	Topic Modeling: 6 narrative topics via LDA (Action, Crime, Family, Sci-Fi, Horror, Romance)
+
 •	Similarity Metrics: Plot similarity to highest-ROI movies
+
 •	Feature Engineering: Centroid distance, embedding complexity, topic probabilities
 
 Part 3: Regression Modeling
+
 •	Log Transformations: Applied to ROI, Budget, Votes, Opening Weekend earnings
+
 •	Logit Transformation: For similarity scores bounded between 0 and 1
+
 •	Multiple Linear Regression: 
-•	log(ROI) ~ log(Budget) + Year + Rating + log(Votes) +            log(Opening_Weekend) + logit(Similarity_to_top_ROI) + Topic
+
+•	log(ROI) ~ log(Budget) + Year + Rating + log(Votes) + log(Opening_Weekend) + logit(Similarity_to_top_ROI) + Topic
 
 ## 3. Installation
 1.	Clone the repository:
